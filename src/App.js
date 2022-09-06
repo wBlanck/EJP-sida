@@ -1,11 +1,15 @@
 import "./App.css";
+import HomeSection from "./components/HomeSection";
 import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <NavBar />
-      <div className="p-4"></div>
+      {/* MAIN WRAPPER */}
+      <div className="">
+        <HomeSection />
+      </div>
     </>
   );
 }
