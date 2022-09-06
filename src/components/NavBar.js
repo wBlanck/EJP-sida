@@ -8,15 +8,15 @@ const NavBar = () => {
       <div className="flex justify-end md:justify-between">
         <div className="hidden gap-2 md:flex">
           <a href="https//google.se">
-            <AiOutlineFacebook size={"28px"} />
+            <AiOutlineFacebook size={"28px"} color="white" />
           </a>
 
           <a href="https//google.se">
-            <AiOutlineInstagram size={"28px"} />
+            <AiOutlineInstagram size={"28px"} color="white" />
           </a>
         </div>
         <button type="button">
-          <GiHamburgerMenu size={"28px"} />
+          <GiHamburgerMenu size={"28px"} color="white" />
         </button>
       </div>
     </nav>
