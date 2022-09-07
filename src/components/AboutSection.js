@@ -15,7 +15,7 @@ const AboutSection = () => {
         <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4">
           <div className="flex flex-col gap-5 mx-auto text-center max-w-7xl">
             <h2 className="text-2xl font-medium ">EJP Bygg AB</h2>
-            <p className="max-w-xl lg:text-l">
+            <p className="max-w-xl mx-auto lg:text-l">
               Vi är ett traditionellt byggföretag som värnar om detaljerna. Med
               lokala leverantörer som vi har samarbete med, så ger vi kunden en
               slutprodukt som ni kan vara stolt över. Vi utför olika projekt,
