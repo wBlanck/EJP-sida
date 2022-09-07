@@ -3,7 +3,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const AboutSection = () => {
   return (
-    <div className="bg-[#1f1f1f] py-28">
+    <div className="bg-[#1f1f1f] pt-28">
       <section className="container flex flex-col items-center justify-center h-full mx-auto max-w-7">
         <div className="h-[400px] w-full">
           <img
