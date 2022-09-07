@@ -14,7 +14,7 @@ const ProjectSection = () => {
           <img
             src={roof}
             alt=""
-            className="block w-full lg:right-0 lg:absolute"
+            className="block object-cover w-full h-full lg:right-0 lg:absolute"
           />
         </div>
         <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4">
@@ -31,7 +31,7 @@ const ProjectSection = () => {
                 <AiOutlineArrowRight size={"28px"} className="" />
               </button>
             </div>
-            <p className="max-w-xl lg:text-l">
+            <p className="max-w-xl mx-auto lg:text-l">
               Vi är ett traditionellt byggföretag som värnar om detaljerna. Med
               lokala leverantörer som vi har samarbete med, så ger vi kunden en
               slutprodukt som ni kan vara stolt över. Vi utför olika projekt,
@@ -50,7 +50,7 @@ const ProjectSection = () => {
           <img
             src={altan}
             alt=""
-            className="block object-cover h-full lg:right-0 lg:absolute"
+            className="block object-cover w-full h-full lg:right-0 lg:absolute"
           />
         </div>
         <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4">
@@ -67,7 +67,7 @@ const ProjectSection = () => {
                 <AiOutlineArrowRight size={"28px"} className="" />
               </button>
             </div>
-            <p className="max-w-xl lg:text-l">
+            <p className="max-w-xl mx-auto lg:text-l">
               Vi är ett traditionellt byggföretag som värnar om detaljerna. Med
               lokala leverantörer som vi har samarbete med, så ger vi kunden en
               slutprodukt som ni kan vara stolt över. Vi utför olika projekt,
