@@ -3,19 +3,19 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const AboutSection = () => {
   return (
-    <div className="bg-[#1f1f1f] pt-28">
-      <section className="container flex flex-col items-center justify-center h-full mx-auto max-w-7">
-        <div className="h-[400px] w-full">
-          <img
-            src={aboutOne}
-            alt=""
-            className="block object-cover w-full h-full lg:right-0 lg:absolute"
-          />
-        </div>
-        <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4">
-          <div className="flex flex-col gap-5 mx-auto text-center max-w-7xl">
+    <div className="bg-[#1f1f1f] pt-28 relative lg:h-screen">
+      <div className="h-[400px] w-full lg:h-[450px] lg:w-[57%] relative lg:absolute lg:right-0 lg:top-0">
+        <img
+          src={aboutOne}
+          alt=""
+          className="block object-cover w-full h-full"
+        />
+      </div>
+      <section className="flex flex-col items-center justify-center w-full h-full mx-auto lg:justify-start lg:flex-row">
+        <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4 lg:max-w-[80%]">
+          <div className="flex flex-col gap-5 mx-auto text-center max-w-7xl lg:text-start lg:ml-0">
             <h2 className="text-2xl font-medium ">EJP Bygg AB</h2>
-            <p className="max-w-xl mx-auto lg:text-l">
+            <p className="max-w-xl mx-auto lg:text-l lg:ml-0 lg:max-w-sm">
               Vi är ett traditionellt byggföretag som värnar om detaljerna. Med
               lokala leverantörer som vi har samarbete med, så ger vi kunden en
               slutprodukt som ni kan vara stolt över. Vi utför olika projekt,
@@ -23,10 +23,10 @@ const AboutSection = () => {
               <span className="text-orange-600"> renovering</span> både små och
               större projekt!
             </p>
-            <button type="button" className="italic mb-7">
+            <button type="button" className="italic mb-7 lg:self-start">
               Kontakta Oss
             </button>
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-3 lg:self-end">
               <button>
                 <AiOutlineArrowLeft
                   size={"28px"}
