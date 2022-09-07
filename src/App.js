@@ -10,7 +10,7 @@ function App() {
     <>
       <NavBar />
       {/* MAIN WRAPPER */}
-      <div className="">
+      <div className="font-mont">
         <HomeSection />
         <AboutSection />
         <ProjectSection />
