@@ -9,7 +9,7 @@ const AboutSection = () => {
           <img
             src={aboutOne}
             alt=""
-            className="block w-full lg:right-0 lg:absolute"
+            className="block object-cover w-full h-full lg:right-0 lg:absolute"
           />
         </div>
         <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4">
