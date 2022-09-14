@@ -26,19 +26,13 @@ const AboutSection = () => {
             <button type="button" className="italic mb-7 lg:self-start">
               Kontakta Oss
             </button>
-            <div className="flex items-center justify-center gap-3 lg:self-end">
+            <div className="flex items-center justify-center gap-3 lg:self-start lg:w-full lg:gap-10">
               <button>
-                <AiOutlineArrowLeft
-                  size={"28px"}
-                  className="border rounded-full"
-                />
+                <AiOutlineArrowLeft className="text-3xl border rounded-full lg:text-4xl" />
               </button>
-              <span className="text-lg">1 / 2</span>
+              <span className="text-lg lg:order-1 lg:ml-auto">1 / 2</span>
               <button>
-                <AiOutlineArrowRight
-                  size={"28px"}
-                  className="border rounded-full"
-                />
+                <AiOutlineArrowRight className="text-3xl border rounded-full lg:text-4xl" />
               </button>
             </div>
           </div>
