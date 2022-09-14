@@ -11,8 +11,8 @@ const AboutSection = () => {
           className="block object-cover w-full h-full"
         />
       </div>
-      <section className="flex flex-col items-center justify-center w-full h-full mx-auto lg:justify-start lg:flex-row">
-        <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4 lg:max-w-[80%]">
+      <section className="flex flex-col items-center justify-center w-full h-full mx-auto lg:justify-start lg:flex-row xl:justify-center">
+        <div className=" text-white bg-[#232323] xl:pt-52 xl:pb-10 w-full pt-6 pb-12 px-4 lg:max-w-[80%] lg:px-10">
           <div className="flex flex-col gap-5 mx-auto text-center max-w-7xl lg:text-start lg:ml-0">
             <h2 className="text-2xl font-medium ">EJP Bygg AB</h2>
             <p className="max-w-xl mx-auto lg:text-l lg:ml-0 lg:max-w-sm">
