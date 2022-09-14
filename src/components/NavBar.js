@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = () => {
   return (
-    <nav className="container fixed left-0 right-0 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
+    <nav className="container fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
       {/* ICONS */}
       <div className="flex justify-end md:justify-between">
         <div className="hidden gap-2 md:flex">
