@@ -2,6 +2,7 @@ import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = () => {
+  /* render different menus depending on screen size */
   return (
     <nav className="container fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
       {/* ICONS */}
