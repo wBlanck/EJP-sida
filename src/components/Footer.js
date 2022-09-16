@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f1f1f] text-white text-center flex flex-col gap-10 p-4">
-      <h3 className="text-2xl">
+    <footer className="bg-[#1f1f1f] text-white text-center flex flex-col gap-10 p-4 lg:gap-20">
+      <h3 className="max-w-4xl mx-auto text-2xl lg:text-4xl">
         Inget jobb är för stort eller för litet, kontakta oss nedan för en
         kostnadsfri offert
       </h3>
