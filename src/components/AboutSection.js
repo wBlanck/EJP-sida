@@ -3,7 +3,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const AboutSection = () => {
   return (
-    <div className="bg-[#1f1f1f] pt-24 relative lg:h-screen flex flex-col gap-10">
+    <div className="bg-[#1f1f1f] py-24 relative lg:h-screen flex flex-col gap-10">
       <div className="h-[400px] w-full lg:h-[450px] lg:w-[50%] relative lg:absolute lg:right-10 lg:top-10 z-[2]">
         <img
           src={aboutOne}
