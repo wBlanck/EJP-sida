@@ -1,6 +1,6 @@
 import roof from "../assets/plannjaroof.jpg";
 import altan from "../assets/altan.jpg";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const ProjectSection = () => {
   return (
@@ -20,13 +20,13 @@ const ProjectSection = () => {
           />
           <div className="flex items-center justify-center gap-10 text-white lg:justify-end">
             <button>
-              <AiOutlineArrowLeft size={"28px"} className="" />
+              <BsArrowLeft size={"28px"} className="" />
             </button>
             <div className="flex gap-4 text-lg">
               <span>01</span> |<span>06</span>
             </div>
             <button>
-              <AiOutlineArrowRight size={"28px"} className="" />
+              <BsArrowRight size={"28px"} className="" />
             </button>
           </div>
         </div>
@@ -57,13 +57,13 @@ const ProjectSection = () => {
           />
           <div className="flex items-center justify-center gap-10 text-white lg:justify-start">
             <button>
-              <AiOutlineArrowLeft size={"28px"} className="" />
+              <BsArrowLeft size={"28px"} className="" />
             </button>
             <div className="flex gap-4 text-lg">
               <span>01</span> |<span>06</span>
             </div>
             <button>
-              <AiOutlineArrowRight size={"28px"} className="" />
+              <BsArrowRight size={"28px"} className="" />
             </button>
           </div>
         </div>

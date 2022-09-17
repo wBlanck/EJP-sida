@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#1f1f1f] text-white text-center flex flex-col gap-10 p-4 lg:gap-20">
       <h3 className="max-w-4xl mx-auto text-2xl lg:text-4xl">
         Inget jobb är för stort eller för litet, kontakta oss nedan för en
-        kostnadsfri offert
+        <span className="text-orange-600"> kostnadsfri offert</span>.
       </h3>
       <div className="flex flex-col gap-10 text-xl">
         <div className="flex items-center justify-evenly">
@@ -24,8 +24,8 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <span>byggareb0b@gmail.com</span>
           <span>
-            Skeppsbrogatan 48 <br />
-            Box 50013 <br /> 97234 Luleå
+            Skeppsbrogatan 123 <br />
+            Box 2022 <br /> 97234 Luleå
           </span>
         </div>
       </div>
