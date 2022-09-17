@@ -4,6 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import MobileMenu from "./MobileMenu";
 
+import { motion } from "framer-motion";
+
 const NavBar = () => {
   const [menu, setMenu] = useState("mobile");
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -11,10 +13,18 @@ const NavBar = () => {
   /* create state here? */
   /* send state here, render out different menu based on state */
   return (
-    <nav className="fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto  2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
+    <nav className="fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
       {/* ICONS */}
       <div className="flex justify-end md:justify-between">
-        <div className="hidden gap-2 md:flex">
+        <motion.div
+          initial={{
+            x: -500,
+            opacity: 0,
+            scale: 0.5,
+          }}
+          transition={{ duration: 1.5 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          className="hidden gap-2 md:flex">
           <a href="https//google.se">
             <AiOutlineFacebook size={"28px"} color="white" />
           </a>
@@ -22,8 +32,16 @@ const NavBar = () => {
           <a href="https//google.se">
             <AiOutlineInstagram size={"28px"} color="white" />
           </a>
-        </div>
-        <button type="button">
+        </motion.div>
+        <motion.button
+          initial={{
+            x: 500,
+            opacity: 0,
+            scale: 0.5,
+          }}
+          transition={{ duration: 1.5 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          type="button">
           {!toggleMenu && (
             <GiHamburgerMenu
               size={"28px"}
@@ -42,7 +60,7 @@ const NavBar = () => {
               }}
             />
           )}
-        </button>
+        </motion.button>
       </div>
       {toggleMenu && <MobileMenu />}
     </nav>
