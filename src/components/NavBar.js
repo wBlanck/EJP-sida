@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineMail } from "react-icons/ai";
+import { VscMenu } from "react-icons/vsc";
+import { FiPhone } from "react-icons/fi";
+
 import { AiOutlineClose } from "react-icons/ai";
 import MobileMenu from "./MobileMenu";
 
@@ -15,7 +17,7 @@ const NavBar = () => {
   return (
     <motion.header className="fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
       {/* ICONS */}
-      <div className="flex justify-end md:justify-between">
+      <div className="flex justify-between">
         <motion.div
           initial={{
             x: -500,
@@ -24,13 +26,19 @@ const NavBar = () => {
           }}
           transition={{ duration: 1.5 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
-          className="hidden gap-2 md:flex">
-          <a href="https//google.se">
-            <AiOutlineFacebook size={"28px"} color="white" />
+          className="flex gap-4">
+          <a
+            className="flex items-center justify-center gap-4 text-white"
+            href="https//google.se">
+            <AiOutlineMail size={"28px"} className="inline text-white/" />
+            <span className="hidden lg:inline">byggarebob@gmail.com</span>
           </a>
 
-          <a href="https//google.se">
-            <AiOutlineInstagram size={"28px"} color="white" />
+          <a
+            className="flex items-center justify-center gap-4 text-white"
+            href="https//google.se">
+            <FiPhone size={"28px"} className="inline text-white" />
+            <span className="hidden lg:inline">076-5481685</span>
           </a>
         </motion.div>
         <motion.button
@@ -43,7 +51,7 @@ const NavBar = () => {
           animate={{ opacity: 1, x: 0, scale: 1 }}
           type="button">
           {!showMenu && (
-            <GiHamburgerMenu
+            <VscMenu
               size={"28px"}
               color="white"
               onClick={() => {
