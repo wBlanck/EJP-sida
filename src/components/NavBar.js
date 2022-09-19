@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [menu, setMenu] = useState("mobile");
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   /* render different menus depending on screen size */
   /* create state here? */
   /* send state here, render out different menu based on state */
   return (
-    <header className="fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
+    <motion.header className="fixed left-0 right-0 z-10 pt-6 pl-4 pr-4 mx-auto 2xl:pl-0 2xl:pr-0 max-w-7xl font-mont">
       {/* ICONS */}
       <div className="flex justify-end md:justify-between">
         <motion.div
@@ -42,28 +42,28 @@ const NavBar = () => {
           transition={{ duration: 1.5 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           type="button">
-          {!toggleMenu && (
+          {!showMenu && (
             <GiHamburgerMenu
               size={"28px"}
               color="white"
               onClick={() => {
-                setToggleMenu(!toggleMenu);
+                setShowMenu(!showMenu);
               }}
             />
           )}
-          {toggleMenu && (
+          {showMenu && (
             <AiOutlineClose
               size={"28px"}
               color="white"
               onClick={() => {
-                setToggleMenu(!toggleMenu);
+                setShowMenu(!showMenu);
               }}
             />
           )}
         </motion.button>
       </div>
-      {toggleMenu && <MobileMenu />}
-    </header>
+      {showMenu && <MobileMenu />}
+    </motion.header>
   );
 };
 
