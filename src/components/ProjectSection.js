@@ -1,14 +1,25 @@
 import roof from "../assets/plannjaroof.jpg";
 import altan from "../assets/altan.jpg";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   return (
     <div className="bg-[#1f1f1f] py-28 relative">
-      <span className="absolute top-0 w-full text-3xl italic tracking-widest text-center text-white sm:text-4xl md:text-5xl lg:text-7xl opacity-10 xl:text-8xl">
+      <motion.span
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 0.1 }}
+        viewport={{ once: true }}
+        className="absolute top-0 w-full text-3xl italic tracking-widest text-center text-white sm:text-4xl md:text-5xl lg:text-7xl opacity-10 xl:text-8xl -z-0">
         TIDIGARE PROJEKT
-      </span>
-      <section className="flex flex-col items-center justify-center min-h-screen mx-auto lg:px-6 max-w-7xl lg:flex-row">
+      </motion.span>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-col items-center justify-center min-h-screen mx-auto lg:px-6 max-w-7xl lg:flex-row">
         <div className=" w-full lg:order-2 lg:h-[500px] flex flex-col gap-4 ">
           <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-end">
             Plannja Royal Tak
@@ -43,9 +54,14 @@ const ProjectSection = () => {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
       {/* PROEJCT TWO */}
-      <section className="flex flex-col items-center justify-center min-h-screen py-10 mx-auto lg:px-6 max-w-7xl lg:flex-row">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-col items-center justify-center min-h-screen py-10 mx-auto lg:px-6 max-w-7xl lg:flex-row">
         <div className=" w-full lg:h-[500px] flex flex-col gap-4 ">
           <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-start">
             Plannja Royal Tak
@@ -80,7 +96,7 @@ const ProjectSection = () => {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };
