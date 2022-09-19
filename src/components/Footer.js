@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f1f1f] text-white text-center flex flex-col gap-10 p-4 lg:gap-20">
+    <footer
+      className="bg-[#1f1f1f] text-white text-center flex flex-col gap-10 p-4 lg:gap-20 min-h-screen justify-center"
+      id="contact">
       <motion.h3
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

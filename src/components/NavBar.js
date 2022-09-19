@@ -9,7 +9,6 @@ import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
 
 const NavBar = () => {
-  const [menu, setMenu] = useState("mobile");
   const [showMenu, setShowMenu] = useState(false);
   /* render different menus depending on screen size */
   /* create state here? */
@@ -70,7 +69,7 @@ const NavBar = () => {
           )}
         </motion.button>
       </div>
-      {showMenu && <MobileMenu />}
+      {showMenu && <MobileMenu setShowMenu={setShowMenu} />}
     </motion.header>
   );
 };

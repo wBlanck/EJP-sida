@@ -9,7 +9,9 @@ const AboutSection = () => {
 
   return (
     <AnimatePresence exitBeforeEnter>
-      <div className="bg-[#1f1f1f] py-24 relative lg:h-screen flex flex-col gap-10">
+      <div
+        className="bg-[#1f1f1f] py-24 relative lg:h-screen flex flex-col gap-10"
+        id="about">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
-const MobileMenu = () => {
+const MobileMenu = ({ setShowMenu }) => {
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
@@ -14,7 +14,12 @@ const MobileMenu = () => {
             <span className="grid justify-start text-lg text-orange-600 sm:text-xl">
               01
             </span>
-            <a href="" className="text-lg justify-self-end sm:text-2xl">
+            <a
+              href="#home"
+              className="text-lg justify-self-end sm:text-2xl"
+              onClick={() => {
+                setShowMenu(false);
+              }}>
               Startsida
             </a>
           </li>
@@ -22,7 +27,12 @@ const MobileMenu = () => {
             <span className="grid justify-start text-lg text-orange-600 sm:text-xl">
               02
             </span>
-            <a href="" className="text-lg justify-self-end sm:text-2xl">
+            <a
+              href="#about"
+              className="text-lg justify-self-end sm:text-2xl"
+              onClick={() => {
+                setShowMenu(false);
+              }}>
               Om Oss
             </a>
           </li>
@@ -30,16 +40,26 @@ const MobileMenu = () => {
             <span className="grid justify-start text-lg text-orange-600 sm:text-xl">
               03
             </span>
-            <a href="" className="text-lg justify-self-end sm:text-2xl">
-              Kontakta Oss
+            <a
+              href="#projects"
+              className="text-lg justify-self-end sm:text-2xl"
+              onClick={() => {
+                setShowMenu(false);
+              }}>
+              Portfolio
             </a>
           </li>
           <li className="grid grid-cols-2 cursor-pointer sm:flex sm:justify-center sm:gap-4 sm:items-center">
             <span className="grid justify-start text-lg text-orange-600 sm:text-xl">
               04
             </span>
-            <a href="" className="text-lg justify-self-end sm:text-2xl">
-              Portfolio
+            <a
+              href="#contact"
+              className="text-lg justify-self-end sm:text-2xl"
+              onClick={() => {
+                setShowMenu(false);
+              }}>
+              Kontakta Oss
             </a>
           </li>
         </ul>

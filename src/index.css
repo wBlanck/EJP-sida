@@ -17,3 +17,7 @@
     rgba(31, 31, 31, 0.5665616588432247) 100%
   );
 }
+
+html {
+  scroll-behavior: smooth;
+}

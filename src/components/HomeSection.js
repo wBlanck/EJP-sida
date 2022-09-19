@@ -3,7 +3,9 @@ import { FiPhone } from "react-icons/fi";
 
 const HomeSection = () => {
   return (
-    <div className="relative h-screen bg-center bg-no-repeat bg-cover bg-home-bg">
+    <div
+      className="relative h-screen bg-center bg-no-repeat bg-cover bg-home-bg"
+      id="home">
       <div className="absolute w-full h-full gradient-bg" />
       <section className="container flex items-center justify-center h-full mx-auto max-w-7">
         {/* <div className="absolute bottom-0 left-0 flex justify-between w-full text-2xl text-white">

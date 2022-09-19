@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   return (
-    <div className="bg-[#1f1f1f] py-28 relative">
+    <div className="bg-[#1f1f1f] py-28 relative" id="projects">
       <motion.span
         initial={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
