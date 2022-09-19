@@ -7,7 +7,7 @@ import ProjectSection from "./components/ProjectSection";
 
 function App() {
   /* create compare slider, IRL images with 3d models with different options etc */
-
+  /* create your own slider */
   return (
     <>
       <NavBar />

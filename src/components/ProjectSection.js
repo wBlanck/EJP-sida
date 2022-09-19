@@ -2,6 +2,7 @@ import roof from "../assets/plannjaroof.jpg";
 import altan from "../assets/altan.jpg";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
+import Carousel, { CarouselItem } from "./Carousel";
 
 const ProjectSection = () => {
   return (
@@ -20,26 +21,26 @@ const ProjectSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
         className="flex flex-col items-center justify-center min-h-screen mx-auto lg:px-6 max-w-7xl lg:flex-row">
-        <div className=" w-full lg:order-2 lg:h-[500px] flex flex-col gap-4 ">
+        <div className="flex flex-col w-full gap-4 lg:order-2">
           <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-end">
             Plannja Royal Tak
           </h2>
-          <img
-            src={roof}
-            alt=""
-            className="block object-cover h-[350px] md:h-[450px]"
-          />
-          <div className="flex items-center justify-center gap-10 text-white lg:justify-end">
-            <button>
-              <BsArrowLeft size={"28px"} className="" />
-            </button>
-            <div className="flex gap-4 text-lg italic font-thin">
-              <span>01</span> |<span>06</span>
-            </div>
-            <button>
-              <BsArrowRight size={"28px"} className="" />
-            </button>
-          </div>
+          <Carousel indicatorPosition="right">
+            <CarouselItem>
+              <img
+                src={roof}
+                alt=""
+                className="block object-cover w-full h-full"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <img
+                src={altan}
+                alt=""
+                className="block object-cover w-full h-full"
+              />
+            </CarouselItem>
+          </Carousel>
         </div>
         <div className="w-full px-4 pt-6 pb-12 text-white lg:w-2/3">
           <div className="flex flex-col items-center gap-5 mx-auto text-center max-w-7xl lg:text-start lg:items-start">
@@ -62,26 +63,26 @@ const ProjectSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
         className="flex flex-col items-center justify-center min-h-screen py-10 mx-auto lg:px-6 max-w-7xl lg:flex-row">
-        <div className=" w-full lg:h-[500px] flex flex-col gap-4 ">
+        <div className="flex flex-col w-full gap-4 ">
           <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-start">
             Plannja Royal Tak
           </h2>
-          <img
-            src={roof}
-            alt=""
-            className="block object-cover h-[350px] md:h-[450px]"
-          />
-          <div className="flex items-center justify-center gap-10 text-white lg:justify-start">
-            <button>
-              <BsArrowLeft size={"28px"} className="" />
-            </button>
-            <div className="flex gap-4 text-lg italic font-thin">
-              <span>01</span> |<span>06</span>
-            </div>
-            <button>
-              <BsArrowRight size={"28px"} className="" />
-            </button>
-          </div>
+          <Carousel indicatorPosition="left">
+            <CarouselItem>
+              <img
+                src={roof}
+                alt=""
+                className="block object-cover w-full h-full"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <img
+                src={altan}
+                alt=""
+                className="block object-cover w-full h-full"
+              />
+            </CarouselItem>
+          </Carousel>
         </div>
         <div className="w-full px-4 pt-6 pb-12 text-white lg:w-2/3">
           <div className="flex flex-col items-center gap-5 mx-auto text-center max-w-7xl lg:text-end lg:items-end">
