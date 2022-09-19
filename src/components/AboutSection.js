@@ -10,14 +10,24 @@ const AboutSection = () => {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className="bg-[#1f1f1f] py-24 relative lg:h-screen flex flex-col gap-10">
-        <div className="h-[400px] w-full lg:h-[450px] lg:w-[50%] relative lg:absolute lg:right-10 lg:top-10 z-[2]">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}
+          className="h-[400px] w-full lg:h-[450px] lg:w-[50%] relative lg:absolute lg:right-10 lg:top-10 z-[2]">
           <img
             src={aboutOne}
             alt=""
             className="block object-cover w-full h-full"
           />
-        </div>
-        <section className="flex items-center w-full h-full p-4 mx-auto">
+        </motion.div>
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}
+          className="flex items-center w-full h-full p-4 mx-auto">
           <div className="absolute left-0 bg-[#232323] h-[550px] w-4/5 -z-0 hidden xl:block"></div>
           <div className="relative flex flex-col w-full gap-5 mx-auto text-center text-white max-w-7xl lg:text-start">
             {readMore && (
@@ -119,7 +129,7 @@ const AboutSection = () => {
               </motion.button>
             )}
           </div>
-        </section>
+        </motion.section>
       </div>
     </AnimatePresence>
   );
