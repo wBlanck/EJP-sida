@@ -17,8 +17,10 @@ const HomeSection = () => {
           </button>
         </div> */}
         <div className="z-10 text-center text-white">
-          <h1 className="mb-6 text-4xl font-medium xl:text-5xl">EJP Bygg AB</h1>
-          <h2 className="text-xl xl:text-3xl">
+          <h1 className="mb-6 text-4xl font-medium tracking-widest xl:text-5xl">
+            EJP Bygg AB
+          </h1>
+          <h2 className="text-xl tracking-wider xl:text-3xl">
             Snickare med känsla för detaljer
           </h2>
         </div>
