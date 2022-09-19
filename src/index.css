@@ -7,3 +7,13 @@
 * {
   box-sizing: border-box;
 }
+
+.gradient-bg {
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    0deg,
+    rgba(31, 31, 31, 1) 4%,
+    rgba(31, 31, 31, 0.7290266448376226) 55%,
+    rgba(31, 31, 31, 0.5665616588432247) 100%
+  );
+}
