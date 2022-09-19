@@ -1,4 +1,5 @@
 import aboutOne from "../assets/about1.jpg";
+import aboutTwo from "../assets/about2.jpg";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -18,11 +19,26 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 2 }}
           className="h-[400px] w-full lg:h-[450px] lg:w-[50%] relative lg:absolute lg:right-10 lg:top-10 z-[2]">
-          <img
-            src={aboutOne}
-            alt=""
-            className="block object-cover w-full h-full"
-          />
+          {!readMore && (
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              src={aboutOne}
+              alt=""
+              className="block object-cover w-full h-full "
+            />
+          )}
+          {readMore && (
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              src={aboutTwo}
+              alt=""
+              className="block object-cover w-full h-full"
+            />
+          )}
         </motion.div>
         <motion.section
           initial={{ opacity: 0 }}
