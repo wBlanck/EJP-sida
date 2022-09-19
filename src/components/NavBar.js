@@ -27,16 +27,16 @@ const NavBar = () => {
           animate={{ opacity: 1, x: 0, scale: 1 }}
           className="flex gap-4">
           <a
-            className="flex items-center justify-center gap-4 text-white"
+            className="flex items-center justify-center gap-4 text-white transition-all hover:text-orange-600"
             href="https//google.se">
-            <AiOutlineMail size={"28px"} className="inline text-white/" />
+            <AiOutlineMail size={"28px"} className="inline " />
             <span className="hidden lg:inline">byggarebob@gmail.com</span>
           </a>
 
           <a
-            className="flex items-center justify-center gap-4 text-white"
+            className="flex items-center justify-center gap-4 text-white transition-all hover:text-orange-600"
             href="https//google.se">
-            <FiPhone size={"28px"} className="inline text-white" />
+            <FiPhone size={"28px"} className="inline " />
             <span className="hidden tracking-widest lg:inline">
               076-5481685
             </span>
@@ -53,8 +53,8 @@ const NavBar = () => {
           type="button">
           {!showMenu && (
             <VscMenu
+              className="text-white transition-all hover:text-orange-600"
               size={"28px"}
-              color="white"
               onClick={() => {
                 setShowMenu(!showMenu);
               }}

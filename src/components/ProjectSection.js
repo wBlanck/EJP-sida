@@ -22,7 +22,7 @@ const ProjectSection = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-col items-center justify-center min-h-screen mx-auto lg:px-6 max-w-7xl lg:flex-row">
         <div className="flex flex-col w-full gap-4 lg:order-2">
-          <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-end">
+          <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-4xl lg:text-end md:text-3xl">
             Plannja Royal Tak
           </h2>
           <Carousel indicatorPosition="right">
@@ -64,7 +64,7 @@ const ProjectSection = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-col items-center justify-center min-h-screen py-10 mx-auto lg:px-6 max-w-7xl lg:flex-row">
         <div className="flex flex-col w-full gap-4 ">
-          <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-start">
+          <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-4xl md:text-3xl lg:text-start">
             Plannja Royal Tak
           </h2>
           <Carousel indicatorPosition="left">

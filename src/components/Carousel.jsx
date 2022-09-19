@@ -40,14 +40,18 @@ const Carousel = ({ children, indicatorPosition }) => {
         className={`flex items-center justify-center gap-10 text-white ${
           indicatorPosition === "right" ? "lg:justify-end" : "lg:justify-start"
         }`}>
-        <button onClick={() => updateIndex(activeIndex - 1)}>
+        <button
+          className="text-white transition-all hover:text-orange-600"
+          onClick={() => updateIndex(activeIndex - 1)}>
           <BsArrowLeft size={"28px"} className="" />
         </button>
         <div className="flex gap-4 text-lg italic font-thin">
           <span>0{activeIndex + 1}</span> |
           <span>0{React.Children.count(children)}</span>
         </div>
-        <button onClick={() => updateIndex(activeIndex + 1)}>
+        <button
+          className="text-white transition-all hover:text-orange-600"
+          onClick={() => updateIndex(activeIndex + 1)}>
           <BsArrowRight size={"28px"} className="" />
         </button>
       </div>
