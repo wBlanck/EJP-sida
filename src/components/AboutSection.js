@@ -110,7 +110,7 @@ const AboutSection = () => {
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
                 animate={{ opacity: 1 }}
-                className="flex items-center self-center justify-center gap-3 italic font-bold transition-colors w-max lg:gap-5 lg:justify-start hover:text-orange-600"
+                className="flex items-center self-center justify-center gap-3 italic font-bold transition-colors w-max lg:gap-5 lg:justify-start hover:text-orange-600 lg:self-start"
                 onClick={() => {
                   setReadMore(!readMore);
                 }}>
