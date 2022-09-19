@@ -1,6 +1,4 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { FiPhone } from "react-icons/fi";
-
+import logo from "../assets/logo.png";
 import { motion } from "framer-motion";
 
 const HomeSection = () => {
@@ -23,6 +21,7 @@ const HomeSection = () => {
           transition={{ duration: 1.5, delay: 1.5 }}
           animate={{ opacity: 1 }}
           className="z-10 text-center text-white">
+          <img src={logo} alt="monkeycompany logo" />
           <h1 className="mb-6 text-4xl font-medium tracking-widest xl:text-5xl">
             EJP Bygg AB
           </h1>

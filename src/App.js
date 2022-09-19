@@ -1,7 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import HomeSection from "./components/HomeSection";
-import MobileMenu from "./components/MobileMenu";
 import NavBar from "./components/NavBar";
 import ProjectSection from "./components/ProjectSection";
 

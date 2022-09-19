@@ -1,6 +1,5 @@
 import roof from "../assets/plannjaroof.jpg";
 import altan from "../assets/altan.jpg";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Carousel, { CarouselItem } from "./Carousel";
 
