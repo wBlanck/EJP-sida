@@ -1,6 +1,8 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 
+import { motion } from "framer-motion";
+
 const HomeSection = () => {
   return (
     <div
@@ -16,14 +18,18 @@ const HomeSection = () => {
             <AiOutlineMail className="inline text-3xl" />
           </button>
         </div> */}
-        <div className="z-10 text-center text-white">
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5, delay: 1.5 }}
+          animate={{ opacity: 1 }}
+          className="z-10 text-center text-white">
           <h1 className="mb-6 text-4xl font-medium tracking-widest xl:text-5xl">
             EJP Bygg AB
           </h1>
           <h2 className="text-xl tracking-wider xl:text-3xl">
             Snickare med känsla för detaljer
           </h2>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
