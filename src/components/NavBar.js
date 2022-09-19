@@ -53,7 +53,7 @@ const NavBar = () => {
           type="button">
           {!showMenu && (
             <VscMenu
-              className="text-white transition-all hover:text-orange-600"
+              className="text-white transition-all hover:text-orange-600 hover:scale-125"
               size={"28px"}
               onClick={() => {
                 setShowMenu(!showMenu);
@@ -62,8 +62,8 @@ const NavBar = () => {
           )}
           {showMenu && (
             <AiOutlineClose
+              className="text-white transition-all hover:text-orange-600 hover:scale-125"
               size={"28px"}
-              color="white"
               onClick={() => {
                 setShowMenu(!showMenu);
               }}
