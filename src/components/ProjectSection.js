@@ -19,7 +19,7 @@ const ProjectSection = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.5, delay: 0.5 }}
         className="flex flex-col items-center justify-center min-h-screen mx-auto lg:px-6 max-w-7xl lg:flex-row">
         <div className="flex flex-col w-full gap-4 lg:order-2">
           <h2 className="mb-6 text-2xl font-medium text-center text-white lg:text-4xl lg:text-end md:text-3xl">
