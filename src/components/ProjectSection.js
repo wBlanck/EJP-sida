@@ -33,7 +33,7 @@ const ProjectSection = () => {
             <button>
               <BsArrowLeft size={"28px"} className="" />
             </button>
-            <div className="flex gap-4 text-lg">
+            <div className="flex gap-4 text-lg italic font-thin">
               <span>01</span> |<span>06</span>
             </div>
             <button>
@@ -75,7 +75,7 @@ const ProjectSection = () => {
             <button>
               <BsArrowLeft size={"28px"} className="" />
             </button>
-            <div className="flex gap-4 text-lg">
+            <div className="flex gap-4 text-lg italic font-thin">
               <span>01</span> |<span>06</span>
             </div>
             <button>
